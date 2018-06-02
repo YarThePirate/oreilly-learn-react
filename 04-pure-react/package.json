@@ -1,0 +1,15 @@
+{
+  "name": "04-pure-react",
+  "version": "1.0.0",
+  "description": "Examples and codes from chapter 4 of Learning React from O'Reilly",
+  "main": "pure.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "reload": "node_modules/.bin/reload"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "reload": "^2.2.2"
+  }
+}
