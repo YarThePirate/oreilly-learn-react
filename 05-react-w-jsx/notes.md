@@ -1,4 +1,4 @@
-# Chapter 6: React with JSX
+# Chapter 5: React with JSX
 
 ### Note taking in Jupyter Notebook
 Yup. Trying to get Jupyter notebook to work with this is proving to be a massive pain in the ass. Vanilla stuff it is.
@@ -56,7 +56,7 @@ Ok, so I've gone through the exercise of breaking everything down into separate 
 
 I'll have to play with that once I get the webpack bundler up and running.
 
-Some points of confusion I might want to touch on if I do a blarg pwost about this later: the different syntax in import statements (i.e. '<code>react</code>' and '<code>react-dom</code>' vs <code>'./components/Menu'</code> and './data/data', "<code>import React from 'react'</code>" vs "<code>import { render } from 'react-dom'</code>", etc).
+Some points of confusion I might want to touch on if I do a blarg pwost about this later: the different syntax in import statements (i.e. '<code>react</code>' and '<code>react-dom</code>' vs <code>'./components/Menu'</code> and '<code>./data/data</code>', "<code>import React from 'react'</code>" vs "<code>import { render } from 'react-dom'</code>", etc).
 
 When importing React to the index.js file, it helps to set <code>window.React = React</code>. This exposes React globally, meaning that all calls to <code>React.createElement</code> are assured to work.
 
