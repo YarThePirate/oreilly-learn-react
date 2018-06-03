@@ -98,3 +98,7 @@ Anyway, the book recommends implementing property validation (and custom validat
 ## Refs
 Ok. I see these every once in while on Enki and I have no idea what they are. So time to see why they're so important, I suppose.
 
+The book says they are "...a feature that allow React components to interact with child elements. The most common use case for refs is to interact with UI elements that collect input from the user."
+
+An example would be rendering a form, and then allowing it to react based on what the user schlapps on it. Not sure how this applies, but I guess we'll see.
+
