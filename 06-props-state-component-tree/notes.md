@@ -192,4 +192,15 @@ But there's an even easier way to do it with ES6 Class components. You can just 
 By and large, setting state from properties is something you should avoid whenever possible, though. However, if you *do* do this, and the parent's properties change on you and you have to have that reflected in your child component, you'll need to use the <code>componentWillReceiveProps</code> lifecycle method to properly handle those changes.
 
 ## State Within the Component Tree
-... TO BE CONTINUED
+As mentioned above (and in several other React tutorial documents), your goal should be to limit the number of components that have state as much as possible. As the book puts it, "The joy of using React does not come from chasing down state variables all over your application." If all of the state is contained in the root component and passed down via properties and up via two-way function binding, your application can be said to have a *single source of truth*.
+
+But this raises some questions about how best to architect an application like this. So let's learn!
+
+**Presentational Components** are components that are purely UI-Related: they are only concerned with how things look and are good candidates to refactor to SFCs. All data is sent to them as properties and passed back via callback functions.
+
+### Passing Data bck Up the Component Tree
+In order to more efficiently handle passing data back and forth, you should give components a unique ID. You can use the <code>uuid</code> library to accomplish this. 
+
+    npm install uuid --save
+
+Notice that they have it saved to the app dependency tree, not the developer dependencies. You'll have to read the uuid docs to figure out how that works. Look specifically for something called "<code>v4</code>". But you would set your id equal to <code>v4()</code> after importing that from the uuid library.
