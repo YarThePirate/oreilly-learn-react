@@ -1,3 +1,31 @@
+// var log = function(message) {
+//   console.log(message)
+// }
+const log = message => console.log(message)
+
+var createScream = function(logger) {
+  return function(message) {
+    logger(message.toUpperCase() + "!!!")
+  }
+}
+
+const scream = createScream(message => console.log(message))
+
+let color_lawn = {
+  title: "lawn",
+  color: "#00FF00",
+  rating: "0"
+}
+
+// var rateColor = function(color, rating) {
+//   return Object.assign({}, color, {rating:rating})
+// }
+
+const rateColor = (color, rating) => ({
+    ...color,
+    rating
+})
+
 const invokeIf = (condition, fnTrue, fnFalse) => (condition) ? fnTrue() : fnFalse()
 
 const showWelcome = () => console.log("Welcome back, Commander.")
